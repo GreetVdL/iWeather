@@ -15,7 +15,7 @@
   },
   "homepage": "https://github.com/GreetVdL/iWeather#readme",
   "scripts": {
-    "deploy": "surge . i-weather.surge.sh",
+    "deploy": "surge . iweather.surge.sh",
     "start": "live-server"
   }
 }
