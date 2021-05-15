@@ -4,15 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My weather station</title>
+    <title>iWeather</title>
     <link rel="stylesheet" href="./css/index.css" type="text/css" />
+    <script type="module" src="./js/index.js"></script>
   </head>
   <body>
     <div id="container">
       <section id="photo" class="card">
         <header class="card__header">Heist-op-den-Berg</header>
+        <div><img src="./images/heist-small.jpg" alt="myvillage" /></div>
+      </section>
+      <section id="weather" class="card">
+        <img src="" alt="currentweathericon" id="icon"></img>
+        <div id="description"></div>
+        <div id="degrees"></div>
+      </section>
+      <section id="time" class="card">
         <div></div>
       </section>
+      <section id="map" class="card">
+        <img src="" alt="heisttown"></img>
+      </section>
+      <!-- <section id="forecast" class="card">
+        <header class="card__header">Forecast</header>
+        <div>Upcomming weather</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section> -->
     </div>
   </body>
 </html>
