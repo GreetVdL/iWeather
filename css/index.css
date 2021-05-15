@@ -45,11 +45,15 @@ html {
   --red: #f22556;
   --darkerrorange: #f4b385;
   --lighterorange: #f9d7cf;
+  --cardwhite: #f5f4f3;
+  --cardgrey: #edecec;
+  --text: #505050;
 }
 
 body {
   background-color: var(--bodycolor);
   font-family: Inter;
+  color: var(--text);
 }
 
 #container {
@@ -63,4 +67,26 @@ body {
   );
 }
 
+/* card styles */
+
+.card {
+  background-color: var(--cardwhite);
+  border-radius: 20px;
+}
+
+.card__header {
+  height: 40px;
+  background-color: var(--cardgrey);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 40px;
+}
+
 /* Photo section */
+
+#photo {
+  width: 322px;
+  height: 322px;
+}
