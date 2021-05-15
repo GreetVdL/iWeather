@@ -1,7 +1,7 @@
 import { Backend } from "./backend.js";
 
 const API = new Backend();
-API.setBaseUrl("http://api.weatherstack.com/");
+API.setBaseUrl("https://api.weatherstack.com/");
 
 const iconPlace = document.querySelector("#icon");
 const descriptionPlace = document.querySelector("#description");
