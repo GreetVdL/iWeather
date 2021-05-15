@@ -1,5 +1,12 @@
 @import url("reset.css");
 
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/RasmusAndersson-Inter-Variable.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* base styles */
 
 * {
@@ -36,15 +43,24 @@ html {
   --aqua: #56f5bf;
   --brown: #ba8b43;
   --red: #f22556;
+  --darkerrorange: #f4b385;
+  --lighterorange: #f9d7cf;
 }
 
 body {
   background-color: var(--bodycolor);
+  font-family: Inter;
 }
 
 #container {
   max-width: 1400px;
   margin: 0 auto;
   min-height: 100vh;
-  background-color: white;
+  background: linear-gradient(
+    159deg,
+    rgba(244, 179, 133, 1) 36%,
+    rgba(249, 215, 207, 1) 100%
+  );
 }
+
+/* Photo section */
