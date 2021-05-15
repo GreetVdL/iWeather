@@ -1,0 +1,21 @@
+{
+  "name": "myweatherstation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GreetVdL/iWeather.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GreetVdL/iWeather/issues"
+  },
+  "homepage": "https://github.com/GreetVdL/iWeather#readme",
+  "scripts": {
+    "deploy": "surge . i-weather.surge.sh",
+    "start": "live-server"
+  }
+}
