@@ -62,16 +62,27 @@ body {
   min-height: 100vh;
   background: linear-gradient(
     159deg,
-    rgba(249, 215, 207, 1) 36%,
+    rgb(248, 211, 203) 36%,
     rgba(244, 179, 133, 1) 100%
   );
+  /* background: linear-gradient(
+    150deg,
+    #f8d3cb,
+    #f9d4ba,
+    #f8ceb1,
+    #f7c9a8,
+    #f6c4a0,
+    #f5be97,
+    #f5b98e,
+    #f4b385
+  ); */
   background-size: 200% 200%;
   position: relative;
   animation-name: colorflow;
-  animation-duration: 22s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  /* animation-direction: alternate; */
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
 }
 
 @keyframes colorflow {
@@ -79,7 +90,7 @@ body {
     background-position: 0% 0%;
   }
   50% {
-    background-position: 91% 100%;
+    background-position: 100% 100%;
   }
   100% {
     background-position: 0% 0%;
