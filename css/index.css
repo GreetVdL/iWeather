@@ -62,10 +62,28 @@ body {
   min-height: 100vh;
   background: linear-gradient(
     159deg,
-    rgba(244, 179, 133, 1) 36%,
-    rgba(249, 215, 207, 1) 100%
+    rgba(249, 215, 207, 1) 36%,
+    rgba(244, 179, 133, 1) 100%
   );
+  background-size: 200% 200%;
   position: relative;
+  animation-name: colorflow;
+  animation-duration: 22s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* animation-direction: alternate; */
+}
+
+@keyframes colorflow {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 /* card styles */
