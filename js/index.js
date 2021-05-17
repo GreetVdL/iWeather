@@ -1,4 +1,5 @@
 import { Backend } from "./backend.js";
+import { weatherToken, mapToken } from "./tokens.js";
 
 const API = new Backend();
 API.setBaseUrl("http://api.weatherstack.com/");
@@ -10,7 +11,7 @@ const timePlace = document.querySelector("#time div");
 const mapPlace = document.querySelector("#map img");
 
 function getCurrentWeather() {
-  API.get("current", "c8a206db47c092c065930d105c7de3ce", "Heist-op-den-Berg")
+  API.get("current", weatherToken, "Heist-op-den-Berg")
     .then((data) => {
       //   console.log(data);
       iconPlace.src = data.current.weather_icons[0];
@@ -22,8 +23,7 @@ function getCurrentWeather() {
 }
 
 function getMap() {
-  mapPlace.src =
-    "https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/4.7283,51.0754,14.76,0/395x503?access_token=pk.eyJ1IjoiZ3JlZXR2ZGwiLCJhIjoiY2tsemx4bzZtMmw5djJxbXB2ZGJpdnZkNCJ9.S-laaAsfSwY9NbwEtcpGnA";
+  mapPlace.src = `https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/4.7283,51.0754,14.76,0/395x503?access_token=${mapToken}`;
   //   fetch(
   //     "https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/4.7283,51.0754,14.76,0/395x503?access_token=pk.eyJ1IjoiZ3JlZXR2ZGwiLCJhIjoiY2tsemx4bzZtMmw5djJxbXB2ZGJpdnZkNCJ9.S-laaAsfSwY9NbwEtcpGnA"
   //   )
